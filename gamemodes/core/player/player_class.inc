@@ -288,9 +288,9 @@ timer ForceSpawnPlayer[50](playerid) {
 }
 
 hook OnPlayerLogin(playerid) {
-	PlayerClassState[playerid] = false;
-	defer ForceSpawnPlayer(playerid);
-	return 1;
+    PlayerClassState[playerid] = false;
+    defer ForceSpawnPlayer(playerid);
+    return 1;
 }
 
 hook OnPlayerRequestClass(playerid, classid) {

@@ -69,3 +69,5 @@ stock Player_SetSkin(playerid, skinid, bool:save = false) {
 stock Player_GetSkin(playerid) {
 	return PlayerSkin[playerid];
 }
+
+// (helper removed; revert to original behavior)

@@ -44,6 +44,12 @@ stock Admin_AddCommandToList(alevel, const string[])
 
 ACMD:[1]acmds(playerid, params[])
 {
+    Admin_ShowLevelList(playerid);
+    return 1;
+}
+
+static Admin_ShowLevelList(playerid)
+{
     new tmpString[152], ranks[256];
     new alevel = Admin_GetPlayerLevel(playerid);
 
@@ -51,14 +57,15 @@ ACMD:[1]acmds(playerid, params[])
         #pragma unused pid, dialogid, inputtext
         if(!response) return 1;
         Player_ShowAdminCmdsOfLevel(playerid, listitem);
+        return 1;
     }
-
 
     for(new i; i < alevel; i++) {
         new newlevel = i + 1;
         format(tmpString, sizeof tmpString, "%s\n", Admin_GetRankNameFromLevel(newlevel));
         strcat(ranks, tmpString);
     }
+
     Dialog_ShowCallback(playerid,
         using inline _response,
         DIALOG_STYLE_LIST,
@@ -73,7 +80,11 @@ static Player_ShowAdminCmdsOfLevel(playerid, alevel) {
     new acmds[2048], tmpString[50];
 
     inline _response(pid, dialogid, response, listitem, string:inputtext[]) {
-        #pragma unused pid, dialogid, response, listitem, inputtext
+        #pragma unused pid, dialogid, listitem, inputtext
+        if(!response) {
+            Admin_ShowLevelList(playerid);
+            return 1;
+        }
         return 1;
     }
 
@@ -82,13 +93,13 @@ static Player_ShowAdminCmdsOfLevel(playerid, alevel) {
         strcat(acmds, aCommands[alevel][i]);
     }
 
-    format(tmpString, sizeof tmpString, "%s", Admin_GetRankNameFromLevel(alevel));
+    format(tmpString, sizeof tmpString, "%s", Admin_GetRankNameFromLevel(alevel + 1));
     Dialog_ShowCallback(playerid,
         using inline _response,
         DIALOG_STYLE_LIST,
         tmpString,
         acmds,
         "Select",
-        "Close");
+        "Back");
     return 1;
 }
