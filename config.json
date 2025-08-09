@@ -104,7 +104,7 @@
     "rcon": {
         "allow_teleport": false,
         "enable": false,
-        "password": "tanginamo"
+        "password": "changeme1"
     },
     "sleep": 5.0,
     "use_dyn_ticks": true,

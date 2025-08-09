@@ -22,7 +22,8 @@ hook OnPlayerConnect(playerid) {
 
 hook native GivePlayerMoney(playerid, money) {
     if(!Player_IsSpawned(playerid)) {
-        return 1;
+        // Ensure the native still executes so money is applied even before first spawn.
+        return continue(playerid, money);
     }
 
     if(money == 0) {

@@ -21,13 +21,16 @@ stock Account_PromptRegister(playerid) {
     }
 
     new
-        string[48 + MAX_PLAYER_NAME + 16];
+        string[256];
 
     static
         const RegisterMessage[] = "\
-        "C_WHITE"Hello "C_GREY"%p. "C_WHITE"Welcome \
-        \n\n \
-        "C_WHITE"Enter password to register. \
+        "C_LGREEN"CREATE ACCOUNT\
+        \n\n"C_WHITE"Hello "C_GOLD"%p"C_WHITE", welcome to "C_SAMPBLUE"%s"C_WHITE"!\
+        \n\n"C_GREY"You're about to create a new account on our server.\
+        \n"C_GREY"Please choose a secure password for your account.\
+        \n\n"C_GREEN"Enter your desired password below.\
+        \n"C_ORANGE"Remember: Keep your password safe and secure!\
     ";
 
     format(string, sizeof(string), RegisterMessage, playerid, SERVER_NAME);

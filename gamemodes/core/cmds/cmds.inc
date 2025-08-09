@@ -44,7 +44,7 @@ public OnPlayerCommandReceived(playerid, cmd[])
 public OnPlayerCommandPerformed(playerid, cmd[], success) {
 
     if (!success) {
-        return SendErrorMsgF(playerid, "Command ~r~'/%s' ~w~does not exist", cmd);
+        return SendErrorMsgF(playerid, "Command ~r~'/%s' ~w~does not exist. Try ~y~'/help'~w~ to see the list of commands.", cmd);
     }
 
     //get time data everytime a command is performed.

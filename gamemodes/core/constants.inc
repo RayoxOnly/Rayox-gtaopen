@@ -48,14 +48,14 @@
 #define MAX_GANG_NAME 17 // 16 + 1
 
 // Server Settings
-#define SERVER_NAME 			"Grand Theft Open"
-#define SERVER_MODE 			"Cops and Robbers"
-#define SERVER_LANGUAGE			"English"
-#define SERVER_WEBSITE			"www.open.mp"
+#define SERVER_NAME 			"Rayox's Server | Cops and Robbers"
+#define SERVER_MODE 			"RYX:CnR open.mp Beta"
+#define SERVER_LANGUAGE			"Bahasa Indonesia / English"
+#define SERVER_WEBSITE			"rayox.site"
 
 #define SCRIPT_VERSION_MAJOR	1
 #define SCRIPT_VERSION_MINOR	0
-#define SCRIPT_VERSION_PATCH	0
+#define SCRIPT_VERSION_PATCH	4
 
 // Streamer
 #define TEXTLABEL_STREAMDISTANCE    (200)

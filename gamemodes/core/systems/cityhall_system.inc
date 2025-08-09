@@ -32,7 +32,7 @@ void:Cityhall_ChangeSkill(playerid) {
         }
 
         Player_ShowJobMenu(playerid);
-        GivePlayerMoney(playerid, CHANGE_SKILL_PRICE);
+        GivePlayerMoney(playerid, -CHANGE_SKILL_PRICE);
     }
 
     new

@@ -67,12 +67,14 @@ void:Account_PromptLogin(playerid, const hash[], len = sizeof(hash)) {
     }
 
     new
-        string[128];
+        string[256];
 
     static const LoginMessage[] = "\
-        "C_WHITE"Hello "C_GREY"%p. "C_WHITE"Welcome back \
-        \n\n\
-        "C_WHITE"Enter credentials to proceed. \
+        "C_SAMPBLUE"ACCOUNT LOGIN\
+        \n\n"C_WHITE"Welcome back, "C_GOLD"%p"C_WHITE"!\
+        \n\n"C_GREY"Please enter your password to access your account.\
+        \n"C_GREY"Your account security is important to us.\
+        \n\n"C_BLUE"Enter your password below to continue.\
     ";
 
     format(
