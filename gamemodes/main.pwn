@@ -129,7 +129,7 @@ public OnGameModeInit() {
 	Message_SetTime(5);
     Message_Add("Ketemu bug? Laporkan ke Admin!");
     Message_Add("You like Rayox's Server? Add us to your favourites!");
-	Message_Add("Check our discord server discord.gg/pTaDm37PZp");
+	Message_Add("Check our discord server [belum dibikin]");
     Message_Add("Help improve the server by reporting bugs & suggestions!");
 
 

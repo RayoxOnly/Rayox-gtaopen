@@ -14,7 +14,7 @@
 
 ## Discord server
 <p align="center">
-	<a href="https://discord.gg/pTaDm37PZp">
+	<a href="https://discord.gg/[link]">
 		<img src="https://discord.com/assets/e4923594e694a21542a489471ecffa50.svg" alt="Logo" height="128">
 	</a>
 </p>
