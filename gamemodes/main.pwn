@@ -127,10 +127,10 @@
 // Will be called after the rest ^
 public OnGameModeInit() {
 	Message_SetTime(5);
-    Message_Add("Ketemu bug? Laporkan ke Admin!");
-    Message_Add("You like Rayox's Server? Add us to your favourites!");
-	Message_Add("Check our discord server [belum dibikin]");
-    Message_Add("Help improve the server by reporting bugs & suggestions!");
+    Message_Add("Welcome to GTA:OPEN");
+    Message_Add("You like GTA:OPEN? Add us to your favourites!");
+	Message_Add("Check our discord server discord.gg/fhN3q4J6Qr");
+    Message_Add("Help keep the server alive by donating!");
 
 
 	SendRconCommand("hostname "#SERVER_NAME " v" #SCRIPT_VERSION_MAJOR "." #SCRIPT_VERSION_MINOR "." #SCRIPT_VERSION_PATCH);

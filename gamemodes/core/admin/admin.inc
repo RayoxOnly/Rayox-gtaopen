@@ -23,55 +23,55 @@
 
 hook OnGameModeInit() {
     // Level 1
-    Admin_AddCommandToList(1, "/freeze - membekukan/melepas kontrol pemain");
-    Admin_AddCommandToList(1, "/akill - membunuh pemain dengan ledakan");
-    Admin_AddCommandToList(1, "/afix - memperbaiki kendaraan yang sedang ditumpangi");
-    Admin_AddCommandToList(1, "/get - tarik pemain ke posisimu");
-    Admin_AddCommandToList(1, "/kick - keluarkan pemain dari server");
-    Admin_AddCommandToList(1, "/goto - teleport ke pemain");
-    Admin_AddCommandToList(1, "/setwanted - atur wanted level pemain");
-    Admin_AddCommandToList(1, "/respawn - paksa respawn pemain");
-    Admin_AddCommandToList(1, "/spec - spectate pemain");
-    Admin_AddCommandToList(1, "/specoff - berhenti spectate dan kembali");
-    Admin_AddCommandToList(1, "/bulletstats - lihat statistik tembakan dan akurasi pemain");
+    Admin_AddCommandToList(1, "/freeze - freeze/unfreeze a player's controls");
+    Admin_AddCommandToList(1, "/akill - kill a player with an explosion");
+    Admin_AddCommandToList(1, "/afix - repair the vehicle you're currently in");
+    Admin_AddCommandToList(1, "/get - pull a player to your position");
+    Admin_AddCommandToList(1, "/kick - remove a player from the server");
+    Admin_AddCommandToList(1, "/goto - teleport to a player");
+    Admin_AddCommandToList(1, "/setwanted - set a player's wanted level");
+    Admin_AddCommandToList(1, "/respawn - force a player to respawn");
+    Admin_AddCommandToList(1, "/spec - spectate a player");
+    Admin_AddCommandToList(1, "/specoff - stop spectating and return");
+    Admin_AddCommandToList(1, "/bulletstats - view a player's shot and accuracy stats");
 
     // Level 2
-    Admin_AddCommandToList(2, "/jail - penjarakan pemain (detik, alasan)");
-    Admin_AddCommandToList(2, "/unjail - bebaskan pemain dari penjara");
-    Admin_AddCommandToList(2, "/tempban - ban sementara (hari/bulan/tahun)");
-    Admin_AddCommandToList(2, "/offban - ban offline berdasarkan nama (hari/bulan/tahun)");
+    Admin_AddCommandToList(2, "/jail - jail a player (seconds, reason)");
+    Admin_AddCommandToList(2, "/unjail - release a player from jail");
+    Admin_AddCommandToList(2, "/tempban - temporary ban (days/months/years)");
+    Admin_AddCommandToList(2, "/offban - offline ban by name (days/months/years)");
 
     // Level 3
-    Admin_AddCommandToList(3, "/getallciv - teleport semua civilian ke posisimu");
-    Admin_AddCommandToList(3, "/unban - hapus ban akun");
-    Admin_AddCommandToList(3, "/disarm - hapus semua senjata pemain");
-    Admin_AddCommandToList(3, "/sethealth - set HP pemain");
-    Admin_AddCommandToList(3, "/setarmour - set armour pemain");
-    Admin_AddCommandToList(3, "/giveweaps - beri paket senjata");
-    Admin_AddCommandToList(3, "/veh - spawn kendaraan");
-    Admin_AddCommandToList(3, "/aveh - spawn kendaraan admin");
-    Admin_AddCommandToList(3, "/dav - hapus semua kendaraan admin");
-    Admin_AddCommandToList(3, "/rscars - reset semua kendaraan");
-    Admin_AddCommandToList(3, "/setname - ganti nama pemain");
-    Admin_AddCommandToList(3, "/setarmy - tambahkan pemain ke Army");
-    Admin_AddCommandToList(3, "/revokearmy - cabut akses Army dari pemain");
+    Admin_AddCommandToList(3, "/getallciv - teleport all civilians to your position");
+    Admin_AddCommandToList(3, "/unban - remove an account ban");
+    Admin_AddCommandToList(3, "/disarm - remove all weapons from a player");
+    Admin_AddCommandToList(3, "/sethealth - set a player's health");
+    Admin_AddCommandToList(3, "/setarmour - set a player's armour");
+    Admin_AddCommandToList(3, "/giveweaps - give a weapon package");
+    Admin_AddCommandToList(3, "/veh - spawn a vehicle");
+    Admin_AddCommandToList(3, "/aveh - spawn an admin vehicle");
+    Admin_AddCommandToList(3, "/dav - delete all admin vehicles");
+    Admin_AddCommandToList(3, "/rscars - reset all vehicles");
+    Admin_AddCommandToList(3, "/setname - change a player's name");
+    Admin_AddCommandToList(3, "/setarmy - add a player to the Army");
+    Admin_AddCommandToList(3, "/revokearmy - revoke a player's Army access");
 
     // Level 4
-    Admin_AddCommandToList(4, "/setvip - set level VIP (bulanan/permanen)");
-    Admin_AddCommandToList(4, "/givemoney - beri uang ke pemain");
-    Admin_AddCommandToList(4, "/fine - denda uang pemain");
-    Admin_AddCommandToList(4, "/hcreate - buat rumah");
-    Admin_AddCommandToList(4, "/hdelete - hapus rumah");
-    Admin_AddCommandToList(4, "/getmoney - lihat jumlah uang pemain");
-    Admin_AddCommandToList(4, "/motd - ubah pesan MOTD");
+    Admin_AddCommandToList(4, "/setvip - set VIP level (monthly/permanent)");
+    Admin_AddCommandToList(4, "/givemoney - give money to a player");
+    Admin_AddCommandToList(4, "/fine - fine a player (deduct money)");
+    Admin_AddCommandToList(4, "/hcreate - create a house");
+    Admin_AddCommandToList(4, "/hdelete - delete a house");
+    Admin_AddCommandToList(4, "/getmoney - view a player's money");
+    Admin_AddCommandToList(4, "/motd - change the MOTD message");
 
     // Level 5
-    Admin_AddCommandToList(5, "/setadmin - set level admin pemain");
-    Admin_AddCommandToList(5, "/skick - kick diam-diam (tanpa broadcast)");
-    Admin_AddCommandToList(5, "/deleteacc - hapus akun dari database");
-    Admin_AddCommandToList(5, "/createatm - buat ATM");
-    Admin_AddCommandToList(5, "/deleteatm - hapus ATM");
-    Admin_AddCommandToList(5, "/editatm - edit ATM");
-    Admin_AddCommandToList(5, "/fly - mode terbang");
-    Admin_AddCommandToList(5, "/createentrance - buat entrance dan exit");
+    Admin_AddCommandToList(5, "/setadmin - set a player's admin level");
+    Admin_AddCommandToList(5, "/skick - silently kick (no broadcast)");
+    Admin_AddCommandToList(5, "/deleteacc - delete an account from the database");
+    Admin_AddCommandToList(5, "/createatm - create an ATM");
+    Admin_AddCommandToList(5, "/deleteatm - delete an ATM");
+    Admin_AddCommandToList(5, "/editatm - edit an ATM");
+    Admin_AddCommandToList(5, "/fly - fly mode");
+    Admin_AddCommandToList(5, "/createentrance - create an entrance and exit");
 }
